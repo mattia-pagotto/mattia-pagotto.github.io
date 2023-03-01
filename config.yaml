@@ -92,6 +92,8 @@ params:
       google:
          SiteVerificationTag: G-PZ7TCJB9Y4
 
+googleAnalytics: "G-PZ7TCJB9Y4"
+
 menu:
    main:
       - identifier: archives
