@@ -1,0 +1,25 @@
+.terms-tags li {
+	display: inline-block;
+	font-weight: 500;
+}
+
+.terms-tags a {
+	display: block;
+	padding: 3px 10px;
+	transition: transform 0.1s;
+}
+
+.terms-tags a span {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+
+.terms-tags a:hover {
+	color: var(--miscellaneous);
+}
+
+.terms-tags a:active {
+	color: var(--miscellaneous);
+	transform: scale(0.96);
+}

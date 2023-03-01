@@ -1,0 +1,124 @@
+baseurl: "http://192.168.8.100:1313"
+title: I Portatori della Fiamma
+languageCode: it
+defaultContentLanguage: it
+theme: Mat-PaperMod
+paginate: 10
+
+params:
+   env: production # to enable google analytics, opengraph, twitter-cards and schema.
+   title: I Portatori della Fiamma
+   description: Un blog che vuole portare alla luce nozioni, domande, esempi, aiuti ed errori che personalmente ritengo utili per la trasformazione radicale di sé.
+   author: Mattia Pagotto
+   keywords:
+      [
+         blog,
+         i portatori della fiamma,
+         portatori della fiamma,
+         risveglio spirituale,
+         risveglio,
+         spiritualità,
+         trasformazione di sé,
+         crescita personale,
+         salvatore brizzi,
+         creazione della realtà,
+         esercito della fiamma,
+         self help,
+         auto aiuto,
+         fiamma,
+      ]
+
+   logo:
+      logoText: I Portatori della Fiamma
+
+   homeInfoParams:
+      Title: "I Portatori della Fiamma 🔥"
+      Content: >
+         #### **Uniamoci, e formiamo un esercito!**
+
+         - Questo blog vuole portare alla luce **nozioni, domande, esempi, aiuti ed errori** che personalmente ritengo utili per la trasformazione radicale di sé.
+
+         #### Lì "fuori", esiste davvero un mondo esterno a me? 
+
+         Insieme, mettiamo in discussione da cima a fondo la realtà apparentemente esterna che ogni giorno ci viene messa davanti agli occhi. **Siamo guerrieri!**
+      buttons:
+         - name: Tutti i Posts
+           url: archives
+         - name: Categorie
+           url: tags
+
+   # Gestione dei formati delle date
+   dateform: "Jan 2, 2006"
+   dateformShort: Jan 2
+   dateformNum: "2006-01-02"
+   dateformNumTime: "2006-01-02 15:04"
+   defaultTheme: auto
+
+   ShowPostAuthor: false
+   ShowReadingTime: true
+   ShowPostNavLinks: true
+   ShowCodeCopyButtons: true
+   ShowToc: false
+   ShowFullTextinRSS: true
+
+   ShowShareButtons: true
+   ShareButtons:
+      - twitter
+      - telegram
+      - linkedin
+      - whatsapp
+      - facebook
+
+   # Opzioni per la funzione di ricerca di Fuse.js. Viene utilizzata nel tab /search.
+   fuseOpts:
+      threshold: 0.2
+      keys:
+         - title
+         - permalink
+         - date
+         - summary
+         - content
+   assets:
+      favicon: "favicon/favicon.ico"
+      favicon16x16: "favicon/favicon-16x16.png"
+      favicon32x32: "favicon/favicon-32x32.png"
+      apple_touch_icon: "favicon/apple-touch-icon.png"
+      safari_pinned_tab: "favicon/safari-pinned-tab.svg"
+      theme_color: "#282828"
+      msapplication_TileColor: "#282828"
+      disableFingerprinting: true
+
+   analytics:
+      google:
+         SiteVerificationTag: G-PZ7TCJB9Y4
+
+menu:
+   main:
+      - identifier: archives
+        name: Archivio
+        url: archives/
+        weight: 5
+      - identifier: search
+        name: Cerca
+        url: /search
+        weight: 10
+      - identifier: tags
+        name: Categorie
+        url: /tags
+        weight: 15
+      - identifier: telegram
+        name: Telegram
+        url: https://t.me/+ayPH6oFamVBhZDU0
+        weight: 20
+
+markup:
+   goldmark:
+      renderer:
+         unsafe: true
+
+# Necessario per il tab di ricerca
+outputs:
+   home:
+      - HTML
+      - RSS
+      - JSON

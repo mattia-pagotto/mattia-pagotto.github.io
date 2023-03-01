@@ -1,0 +1,36 @@
+# Traduzione dei mesi inglesi in italiano per essere mostrati corretamente nei meta dei posts.
+- id: January
+  translation: Gennaio
+
+- id: February
+  translation: Febbraio
+
+- id: March
+  translation: Marzo
+
+- id: April
+  translation: Aprile
+
+- id: May
+  translation: Maggio
+
+- id: June
+  translation: Giugno
+
+- id: July
+  translation: Luglio
+
+- id: August
+  translation: Agosto
+
+- id: September
+  translation: Settembre
+
+- id: October
+  translation: Ottobre
+
+- id: November
+  translation: Novembre
+
+- id: December
+  translation: Dicembre

@@ -1,0 +1,32 @@
+.last-added-title {
+	margin-top: 15px;
+	margin-bottom: var(--content-gap);
+}
+
+.first-entry.home-info .entry-content {
+	color: var(--home-info-sub-title);
+}
+
+.entry-footer.home-info {
+	display: inherit;
+}
+
+.home-info-buttons {
+	display: flex;
+}
+
+.home-info-buttons .button {
+	margin: 0 8px 0 0;
+	padding: 6px;
+}
+
+.home-info-buttons .button-inner {
+	font-size: 16px;
+	padding: 0 8px;
+}
+
+.home-info-line-separator {
+	height: 2px;
+	background: var(--tertiary);
+	border: 0;
+}

@@ -1,0 +1,24 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+{{/* Attenzione, funziona solo per l'italiano! */}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s %d, %d</span>" (.Date) (i18n .Date.Month) (.Date.Day) (.Date.Year))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
+{{- end }}
+
+{{- if (.Param "ShowPostAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice .) }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" -}}
+{{- end -}}
