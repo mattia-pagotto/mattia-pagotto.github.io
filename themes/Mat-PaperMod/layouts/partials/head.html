@@ -199,7 +199,19 @@ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}"> {{- /* RSS
 or (eq site.Params.env "production") }} {{- /* template
 "_internal/google_analytics.html" . */}}
 <!-- Google Tag Manager -->
-<script></script>
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		console.log(w[l]);
+		w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != "dataLayer" ? "&l=" + l : "";
+		j.async = true;
+		j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, "script", "dataLayer", "GTM-KJG8ZWX");
+</script>
 <!-- End Google Tag Manager -->
 {{- template "partials/templates/opengraph.html" . }} {{- template
 "partials/templates/twitter_cards.html" . }} {{- template
