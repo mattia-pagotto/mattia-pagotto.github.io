@@ -88,12 +88,6 @@ params:
       msapplication_TileColor: "#282828"
       disableFingerprinting: true
 
-   analytics:
-      google:
-         SiteVerificationTag: G-PZ7TCJB9Y4
-
-googleAnalytics: "G-PZ7TCJB9Y4"
-
 menu:
    main:
       - identifier: archives
