@@ -9,9 +9,17 @@
     <span> | </span>
     {{- end }}
     <span>
-        With the help of
+        <a href="" data-cc="c-settings">{{ i18n "cookie_preferences"}}</a>
+    </span>
+    <span> | </span>
+    <span>
+        <a href='https://www.iubenda.com/privacy-policy/19723382' target='_blank' rel='noopener noreferrer' class='cc-link'>{{ i18n "privacy_policy"}}</a>
+    </span>
+    <span> | </span>
+    <span>
+        {{ i18n "with_the_help_of" }}&nbsp;
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener noreferrer" target="_blank">PaperMod</a>
     </span>
 </footer>
 {{- end }}
@@ -76,10 +84,10 @@
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+            document.body.classList.remove('dark', 'c_darkmode');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            document.body.classList.add('dark', 'c_darkmode');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

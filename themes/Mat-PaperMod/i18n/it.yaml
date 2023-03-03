@@ -1,39 +1,63 @@
-- id: prev_page
-  translation: "Pag Prec"
+prev_page: "Pag Prec"
 
-- id: next_page
-  translation: "Pag Succ"
+next_page: "Pag Succ"
 
-- id: prev_post
-  translation: "Precedente"
+prev_post: "Precedente"
 
-- id: next_post
-  translation: "Prossimo"
+next_post: "Prossimo"
 
-- id: read_time
-  translation:
-     one: "1 minuto"
-     other: "{{ .Count }} minuti"
+read_time:
+   one: "1 minuto"
+   other: "{{ .Count }} minuti"
 
-- id: words
-  translation:
-     one: "parola"
-     other: "{{ .Count }} parole"
+words:
+   one: "parola"
+   other: "{{ .Count }} parole"
 
-- id: toc
-  translation: "Tabella dei Contenuti"
+toc: "Tabella dei Contenuti"
 
-- id: translations
-  translation: "Traduzioni"
+translations: "Traduzioni"
 
-- id: code_copy
-  translation: "copia"
+code_copy: "copia"
+code_copied: "copiato!"
 
-- id: code_copied
-  translation: "copiato!"
+last_added_posts: "Ultimi post aggiunti"
 
-- id: last_added_posts
-  translation: "Ultimi post aggiunti"
+with_the_help_of: "Con l'aiuto di"
+privacy_policy: "Informativa sulla Privacy"
+cookie_preferences: "Preferenze sui Cookies"
+# Cookie banner
+name: "Nome"
+domain: "Dominio"
+expiration: "Scadenza"
+cookie_description: "Descrizione"
+accept_all: "Accetta"
+accept_only_necessary: "Rifiuta"
+preferences: "Preferenze"
+revision_message: "Gentile utente, i termini e le condizioni sono cambiati dall'ultima volta che hai visitato questo sito."
 
-- id: published_on
-  translation: "Pubhb"
+# Consent Modal Banner
+consent_modal_title: "Ciao, utilizziamo i cookies!"
+consent_modal_description: "Questo sito utilizza cookies essenziali per garantire il suo corretto funzionamento e cookies di tracciamento per capire come interagisci con esso. Questi ultimi verranno impostati solo dopo il tuo consenso. <button type='button' data-cc='c-settings' class='cc-link'>Gestisci preferenze</button>"
+
+# Setting Modal Banner
+settings_modal_title: "Impostazioni dei cookies"
+save_settings: "Salva preferenze"
+settings_accept_all: "Accetta tutto"
+settings_reject_all: "Rifiuta tutto"
+
+cookie_usage_block_title: "Utilizzo dei cookies"
+cookie_usage_block_description: "Utilizzo i cookies per garantire le funzionalità di base del sito Web e per migliorare la tua esperienza online. Puoi scegliere di attivare/disattivare ogni categoria quando vuoi, tenendo presente che il rifiuto del consenso per una finalità particolare può rendere le relative funzioni non disponibili. Per maggiori dettagli relativi ai cookies e ad altri dati sensibili, leggi l'intera <a href='https://www.iubenda.com/privacy-policy/19723382' target='_blank' rel='noopener noreferrer' class='cc-link'>informativa sulla privacy</a>."
+
+strictly_necessary_cookies: "Cookies strettamente necessari"
+strictly_necessary_cookies_description: "Questi cookies sono essenziali per il corretto funzionamento del mio sito web. Senza questi cookies il sito non funzionerebbe correttamente"
+performance_and_analytics_cookies: "Cookies di performance e analitici"
+performance_and_analytics_cookies_description: "Questi strumenti di tracciamento mi permettono di misurare il traffico e analizzare il tuo comportamento per migliorare il servizio."
+
+more_information: "Informazioni aggiuntive"
+more_information_description: 'Queste impostazioni saranno accessibili e modificabili in ogni momento cliccando sul bottone "Preferenze sui Cookies" presente sul fondo della pagina.'
+
+# Cookies description
+years: "anni"
+ga_ga_tag: "Utilizzato da google analytics per distinguere gli utenti."
+ga_gid_tag: "Utilizzato da google analytics per mantenere lo stato della sessione."

@@ -1,3 +1,69 @@
-{{- /* Footer custom content area start */ -}}
-{{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
-{{- /* Footer custom content area end */ -}}
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }} 
+{{- /* CookieConsent */ -}} 
+{{- $cookieconsentjs := resources.Get "js/cookieconsent.min.js"}}
+<script
+	defer
+	crossorigin="anonymous"
+	src="{{ $cookieconsentjs.RelPermalink }}"
+></script>
+{{- $cookieconsentInitjs := resources.Get "js/cookieconsent-init.js" | js.Build
+(dict "params" 
+   (dict 
+      "name" (i18n "name")
+      "domain" (i18n "domain")
+      "expiration" (i18n "expiration")
+      "description" (i18n "cookie_description")
+      "accept_all" (i18n "accept_all")
+      "accept_only_necessary" (i18n "accept_only_necessary")
+      "preferences" (i18n "preferences")
+      "revision_message" (i18n "revision_message")
+      "cookie_preferences" (i18n "cookie_preferences")
+      "consent_modal" (dict 
+         "title" (i18n "consent_modal_title" )
+         "description" (i18n "consent_modal_description" )
+      )
+      "settings_modal" (dict 
+         "title" (i18n "settings_modal_title" )
+         "save_settings" (i18n "save_settings" )
+         "settings_accept_all" (i18n "settings_accept_all" )
+         "settings_reject_all" (i18n "settings_reject_all" )
+         "cookie_usage_block" (dict 
+            "title" (i18n "cookie_usage_block_title" )
+            "description" (i18n "cookie_usage_block_description" )
+            "years" (i18n "years" )
+            "strictly_necessary_cookies" (dict
+               "title" (i18n "strictly_necessary_cookies" )
+               "description" (i18n "strictly_necessary_cookies_description" )
+            ) 
+            "performance_and_analytics_cookies" (dict
+               "title" (i18n "performance_and_analytics_cookies" )
+               "description" (i18n "performance_and_analytics_cookies_description" )
+               "ga" (dict
+                  "_ga_description" (i18n "ga_ga_tag" )
+                  "_gid_description" (i18n "ga_gid_tag" )
+               )
+            )
+            "more_information" (dict
+               "title" (i18n "more_information" )
+               "description" (i18n "more_information_description" )
+            )
+         )
+      )
+   )
+) }}
+<script defer src="{{ $cookieconsentInitjs.RelPermalink }}"></script>
+<script			
+   async
+   type="text/plain"
+   data-cookiecategory="analytics"
+   src="https://www.googletagmanager.com/gtag/js?id=G-QXWHWSF179" 
+   defer
+></script>
+<script type="text/plain" data-cookiecategory="analytics" defer>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QXWHWSF179');
+</script>
+{{- end }}
