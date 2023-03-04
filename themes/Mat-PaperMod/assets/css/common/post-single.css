@@ -10,21 +10,15 @@
 
 .post-description {
 	margin-top: 10px;
-	margin-bottom: var(--content-gap);
+	margin-bottom: 24px;
 }
 
 .tag-search-description p {
-	margin: 0px 0px 0px;
-	font-size: 14px;
-	line-height: 12px;
-}
-
-.tag-search-description h1 {
-	text-transform: uppercase;
-	text-decoration: underline;
-	letter-spacing: 2px;
-	font-size: 35px;
-	margin-bottom: 20px;
+	font-size: 0.95rem;
+	line-height: 1.7;
+	font-weight: 400;
+	color: inherit;
+	margin-top: 0.5em;
 }
 
 .post-meta,

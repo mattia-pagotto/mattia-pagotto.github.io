@@ -33,8 +33,8 @@
 	<div class="post-description">{{ .Description | markdownify }}</div>
 	{{- end }} {{- else }}
 	<div class="post-description tag-search-description">
-		<p>Ricerca per categoria:</p>
-		<h1>{{$term}}</h1>
+		<h1>{{ i18n "category" }}&nbsp;&ldquo;{{$term}}&rdquo;</h1>
+		<p>{{ i18n "category_description" }}&nbsp;&ldquo;{{$term}}&rdquo;.</p>
 	</div>
 	{{- end }}
 </header>

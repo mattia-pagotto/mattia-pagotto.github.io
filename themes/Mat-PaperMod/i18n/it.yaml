@@ -61,3 +61,7 @@ ga_gid_tag: "Utilizzato da google analytics per mantenere lo stato della session
 something_went_wrong: "Qualcosa è andato storto!"
 resource_not_found_description: "La risorsa che stai cercando potrebbe essere stata rimossa o è temporaneamente non disponibile."
 back_to_home_page: "Torna alla pagina iniziale"
+
+# Search by category
+category: "Categoria"
+category_description: "Di seguito è presente l'elenco di tutti i post archiviati sotto la categoria"
