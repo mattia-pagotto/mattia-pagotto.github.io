@@ -1,4 +1,4 @@
-baseurl: "http://192.168.8.100:1313"
+baseurl: "https://mattiapagotto.com"
 title: I Portatori della Fiamma
 languageCode: it
 defaultContentLanguage: it
@@ -87,6 +87,7 @@ params:
       theme_color: "#282828"
       msapplication_TileColor: "#282828"
       disableFingerprinting: true
+      disableHLJS: true
 
 menu:
    main:
