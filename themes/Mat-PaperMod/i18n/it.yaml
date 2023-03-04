@@ -1,21 +1,16 @@
 prev_page: "Pag Prec"
-
 next_page: "Pag Succ"
-
 prev_post: "Precedente"
-
 next_post: "Prossimo"
 
 read_time:
    one: "1 minuto"
    other: "{{ .Count }} minuti"
-
 words:
    one: "parola"
    other: "{{ .Count }} parole"
 
 toc: "Tabella dei Contenuti"
-
 translations: "Traduzioni"
 
 code_copy: "copia"
@@ -61,3 +56,8 @@ more_information_description: 'Queste impostazioni saranno accessibili e modific
 years: "anni"
 ga_ga_tag: "Utilizzato da google analytics per distinguere gli utenti."
 ga_gid_tag: "Utilizzato da google analytics per mantenere lo stato della sessione."
+
+# 404 page
+something_went_wrong: "Qualcosa è andato storto!"
+resource_not_found_description: "La risorsa che stai cercando potrebbe essere stata rimossa o è temporaneamente non disponibile."
+back_to_home_page: "Torna alla pagina iniziale"

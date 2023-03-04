@@ -3,7 +3,13 @@
 	min-height: calc(100vh - var(--header-height) - var(--footer-height));
 	max-width: calc(var(--main-width) + var(--gap) * 2);
 	margin: auto;
-	padding: var(--gap);
+	padding: var(--gap) calc(var(--gap) + 10px);
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		padding: var(--gap) calc(var(--gap) + 3px);
+	}
 }
 
 .page-header h1 {
@@ -65,4 +71,26 @@ pre {
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
 	display: block;
+}
+
+.button {
+	padding: 0.85rem 1rem;
+	border-radius: 0.3rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+	transition: background-color 0.2s, color 0.2s, transform 0.1s;
+	background: var(--tertiary);
+}
+
+.button:hover {
+	background: var(--primary);
+	color: var(--constrast-primary);
+}
+
+.button-inner {
+	padding: 0 8px;
+}
+
+.button:active {
+	transform: scale(0.96);
 }

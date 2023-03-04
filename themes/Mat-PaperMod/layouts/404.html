@@ -1,3 +1,8 @@
 {{- define "main" }}
-<div class="not-found">404</div>
+<div class="not-found">
+	<h1 aria-label="Error 404">404</h1>
+	<h2>{{ i18n "something_went_wrong"}}</h2>
+	<p>{{ i18n "resource_not_found_description"}}</p>
+	<a class="button" href="/"> {{ i18n "back_to_home_page"}} </a>
+</div>
 {{- end }}{{/* end main */ -}}

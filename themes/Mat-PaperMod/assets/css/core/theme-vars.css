@@ -2,7 +2,7 @@
 	--gap: 24px;
 	--nav-phone-bg: rgb(229, 229, 229);
 	--page-header-gap-from-nav: 24px;
-	--content-gap: 20px;
+	--content-gap: 13px;
 	--nav-width: 1024px;
 	--main-width: 720px;
 	--header-padding-height: 10px;
@@ -15,6 +15,7 @@
 	--primary: rgb(30, 30, 30);
 	--secondary: rgb(108, 108, 108);
 	--tertiary: rgb(214, 214, 214);
+	--constrast-primary: rgb(218, 218, 219);
 	--content: rgb(31, 31, 31);
 	--hljs-bg: rgb(28, 29, 33);
 	--code-bg: rgb(245, 245, 245);
@@ -30,6 +31,7 @@
 	--primary: rgb(218, 218, 219);
 	--secondary: rgb(155, 156, 157);
 	--tertiary: rgb(65, 66, 68);
+	--constrast-primary: rgb(30, 30, 30);
 	--content: rgb(196, 196, 197);
 	--hljs-bg: rgb(46, 46, 51);
 	--code-bg: rgb(55, 56, 62);
