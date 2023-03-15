@@ -8,7 +8,7 @@ paginate: 10
 params:
    env: production # to enable google analytics, opengraph, twitter-cards and schema.
    title: I Portatori della Fiamma
-   description: Un blog che vuole portare alla luce nozioni, domande, esempi, aiuti ed errori che personalmente ritengo utili per la trasformazione radicale di sé.
+   description: Riuniamoci, Portatori della Fiamma! Un blog di Mattia Pagotto, che vuole portare alla luce nozioni, domande, esempi, aiuti ed errori ritenuti da lui utili per la trasformazione radicale di sé. Scopriamo davvero se, come dice Salvatore Brizzi, l'esterno è l'interno.
    author: Mattia Pagotto
    keywords:
       [
