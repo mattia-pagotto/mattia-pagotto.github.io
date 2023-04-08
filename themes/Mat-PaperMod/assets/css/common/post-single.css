@@ -429,3 +429,24 @@ img.in-text {
 	display: inline;
 	margin: auto;
 }
+
+.newsletter-invite-div {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	border-top: 1px solid var(--tertiary);
+}
+
+.newsletter-invite-caption {
+	margin: 20px 0;
+	text-align: center;
+	max-width: 600px;
+}
+
+.newsletter-invite-caption h3 {
+	margin: 10px 0 10px;
+}
+
+.newsletter-invite-caption p {
+	font-size: 15px;
+}

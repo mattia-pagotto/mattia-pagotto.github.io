@@ -65,3 +65,14 @@ back_to_home_page: "Torna alla pagina iniziale"
 # Search by category
 category: "Categoria"
 category_description: "Di seguito è presente l'elenco di tutti i post archiviati sotto la categoria"
+
+# Newsletter
+Name: "Nome"
+Email: "Email"
+required: "richiesto"
+surname_not_recessary: "non è necessario il cognome"
+subscribe_me_now: "Iscrivimi ora!"
+err_invalid_name: "Nome non valido!"
+err_invalid_email: "Email non valida!"
+newsletter_privacy: "Utilizzo Mailchimp come piattaforma di marketing. Facendo clic di seguito per iscriverti, riconosci che le tue informazioni verranno trasferite a Mailchimp per l'elaborazione e verranno trattate in base alle loro"
+terms_of_use: "condizioni d'uso."

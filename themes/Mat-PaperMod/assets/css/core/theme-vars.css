@@ -8,7 +8,7 @@
 	--header-padding-height: 10px;
 	--header-height: 62.4px;
 	--footer-height: 60px;
-	--radius: 8px;
+	--radius: 0.35em;
 	--theme: rgb(255, 255, 255);
 	--entry: rgb(255, 255, 255);
 	--home-info-sub-title: rgb(80, 80, 80);
