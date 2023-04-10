@@ -1,18 +1,16 @@
 <div class="newsletter-invite-div">
 	<div class="newsletter-invite-caption">
-		<h3>Vuoi iscriverti alla mia newsletter?</h3>
+		<h3>{{ i18n "want_to_subscribe_to_newsletter" }}</h3>
 		<p>
-			Se desideri rimanere aggiornato ogni qual volta pubblico un nuovo
-			articolo su questo sito, iscrivi alla mia newsletter
-			<b>premendo il pulsante qui sotto!</b>
+			{{ i18n "want_to_subscribe_to_newsletter_sub" }}
+			<b>{{ i18n "want_to_subscribe_to_newsletter_sub_bold" }}</b>
 		</p>
 		<div class="submit-btn no-tap">
-			<button type="submit" id="submit-btn">
+			<a id="submit-btn" href="/newsletter">
 				<span class="text inline-block align-middle no-select"
 					>{{ i18n "subscribe_me_now" }}</span
 				>
-				<span class="icon inline-block align-middle no-select"
-					><svg
+				<span class="icon inline-block align-middle no-select" style="display: inherit;"><svg
 						class="block"
 						xmlns="http://www.w3.org/2000/svg"
 						width="18"
@@ -25,7 +23,7 @@
 							d="M1 8a.5.5 0 0 1 .5-.5h11.8l-3.15-3.15a.5.5 0 0 1 .7-.7l4 4a.5.5 0 0 1 0 .7l-4 4a.5.5 0 0 1-.7-.7l3.14-3.15H1.5A.5.5 0 0 1 1 8z"
 						></path></svg
 				></span>
-			</button>
+			</a>
 		</div>
 	</div>
 </div>

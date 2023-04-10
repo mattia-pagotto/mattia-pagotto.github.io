@@ -59,7 +59,7 @@ submit_btn.addEventListener("click", (event) => {
 	// check the control input for bots
 	validation_map.control_input = !control_input.value;
 
-	// cheking
+	// checking
 	if (!validation_map.name) {
 		name_input.focus();
 	} else if (!validation_map.email) {

@@ -76,3 +76,8 @@ err_invalid_name: "Nome non valido!"
 err_invalid_email: "Email non valida!"
 newsletter_privacy: "Utilizzo Mailchimp come piattaforma di marketing. Facendo clic di seguito per iscriverti, riconosci che le tue informazioni verranno trasferite a Mailchimp per l'elaborazione e verranno trattate in base alle loro"
 terms_of_use: "condizioni d'uso."
+
+# Newsletter partial
+want_to_subscribe_to_newsletter: "Vuoi iscriverti alla mia newsletter?"
+want_to_subscribe_to_newsletter_sub: "Se desideri rimanere aggiornato ogni qual volta pubblico un nuovo articolo su questo sito, iscriviti alla mia newsletter"
+want_to_subscribe_to_newsletter_sub_bold: "premendo il pulsante qui sotto!"

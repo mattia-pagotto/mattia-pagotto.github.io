@@ -433,14 +433,16 @@ img.in-text {
 .newsletter-invite-div {
 	display: flex;
 	margin-top: 20px;
+	margin: 20px 0 0;
 	justify-content: center;
 	border-top: 1px solid var(--tertiary);
+	
 }
 
 .newsletter-invite-caption {
-	margin: 20px 0;
+	margin: 20px 10px 0;
 	text-align: center;
-	max-width: 600px;
+	max-width: 500px;
 }
 
 .newsletter-invite-caption h3 {
@@ -448,5 +450,11 @@ img.in-text {
 }
 
 .newsletter-invite-caption p {
-	font-size: 15px;
+	font-size: 16px;
+}
+
+.newsletter-invite-caption .submit-btn {
+	display: flex;
+	margin-top: 10px;
+    justify-content: center;
 }
