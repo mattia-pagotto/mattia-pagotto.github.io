@@ -9,6 +9,8 @@
 
 .first-entry.home-info .entry-content {
 	color: var(--home-info-sub-title);
+	font-size: 17px;
+	line-height: 1.6;
 }
 
 .entry-footer.home-info {
